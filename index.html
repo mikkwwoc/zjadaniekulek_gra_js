@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Gra - Zjadanie kulek</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="score"></div>
+<div id="sprintBarContainer"><div id="sprintBar"></div></div>
+<div id="ui">
+  <h1>Zjadanie kulek</h1>
+  <ul>
+    <li>Poruszanie: <b>WASD</b> lub <b>strzałki</b></li>
+    <li>Sprint: <b>Shift</b> (1 sekunda, potem 3 sekundy cooldown)</li>
+    <li>Jedz mniejsze kulki (zielone) aby rosnąć</li>
+    <li>Unikaj większych przeciwników (czerwonych)</li>
+    <li>Przeciwnicy też się rozwijają i jedzą siebie nawzajem</li>
+    <li>Osiągnij <b>2000 punktów</b>, aby wygrać</li>
+  </ul>
+  <button id="startBtn" onclick="startGame()">Start</button>
+</div>
+<script src="scripts/entity.js"></script>
+<script src="scripts/player.js"></script>
+<script src="scripts/food.js"></script>
+<script src="scripts/enemy.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
